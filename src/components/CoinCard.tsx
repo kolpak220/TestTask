@@ -8,7 +8,7 @@ import { Card, Divider, Typography } from "antd";
 import { useAppDispatch } from "../redux/store";
 import { deleteItem, likeItem } from "../redux/slices/coinslice/slice";
 import CoinDisplay from "./CoinDisplay";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 type vals = {
   id: string;
@@ -21,7 +21,6 @@ type vals = {
 
 const CoinCard: React.FC<vals> = ({ icon, name, price, id, liked, symbol }) => {
   const dispatch = useAppDispatch();
-  const navigate = useNavigate();
 
   return (
     <Card

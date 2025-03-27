@@ -1,6 +1,5 @@
 import {
   Button,
-  DescriptionsProps,
   Divider,
   Flex,
   FloatButton,
